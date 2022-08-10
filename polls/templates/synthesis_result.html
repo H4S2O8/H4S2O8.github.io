@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合成结果</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+</head>
+<body>
+    合成以下文本的语音:<br>
+    <label>{{ text }}</label>.<br>
+    <audio controls="controls">
+      <source src="{% static 'audio/outputaudio.mp3' %}" type="audio/mp3" />
+    Your browser does not support this audio format.
+    </audio>
+    <!-- 模板指令{{参数变量}} -->
+</body>
+</html>

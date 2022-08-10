@@ -1,0 +1,14 @@
+.fonttitle{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.tooltip {
+    font-size: 0.8em;
+    color: gray;
+}
+
+ul li{
+    margin: 10px 0;
+}

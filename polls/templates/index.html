@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HAHA</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+    <h1>404 Not Found???</h1><br>
+
+    {% load static %}
+    <img src="{% static 'img/406.jpg' %}" alt="My image"><br>
+    <img src="{% static 'img/404.png' %}" width="400" alt="My image"><br>
+    发送带参数的请求<br>
+    <a href="/polls/add/?num1=1&num2=2">发送2个参数</a> <br><br><br>
+
+    <form action="/polls/add/">
+    num1: <input type="text" name="num1" value="2"><br>
+    num2: <input type="text" name="num2" value="2"><br>
+    <input type="submit" value="提交">
+    </form><br><br><br>
+
+
+    <form action="/polls/add_post/" method="POST">
+        {% csrf_token %}
+    num1: <input type="text" name="num1" value="2"><br>
+    num2: <input type="text" name="num2" value="2"><br>
+    <input type="submit" value="提交">
+    </form>
+
+    <!-- 模板指令{{参数变量}} -->
+    The ans is <label>{{ ans }}</label>.<br>
+
+    <b1>{{ 合成语音 }}</b1>
+    <form action="/polls/speech_synthesis/" method="POST">
+        {% csrf_token %}
+    speech: <input type="text" name="speech" value="请键入需要转语音的文字"><br>
+    <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
