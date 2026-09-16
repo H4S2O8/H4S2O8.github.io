@@ -12,7 +12,7 @@ function pickGame() {
   const { card, index } = choices[Math.floor(Math.random() * choices.length)];
   previousPick = index;
   document.querySelector('#pick-title').textContent = card.querySelector('h3').firstChild.textContent;
-  document.querySelector('#pick-description').textContent = `${card.querySelector('.game-description').textContent} ${card.querySelector('.device-note').textContent.trim()}。`;
+  document.querySelector('#pick-description').textContent = card.querySelector('.game-description').textContent;
   document.querySelector('#pick-link').href = card.querySelector('.play-link').href;
 }
 
