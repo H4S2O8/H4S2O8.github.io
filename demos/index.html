@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="H4S2O8 的游戏小站。体验 2D 平台解谜、3D 实验室冒险，以及短篇视觉小说《选项框外的你》。打开浏览器，即刻开玩。">
+  <meta property="og:title" content="PLAYROOM · H4S2O8 的游戏小站">
+  <meta property="og:description" content="三个小世界，等你来探索。平台解谜与视觉小说，打开即玩。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://h4s2o8.github.io/demos/">
+  <meta property="og:image" content="https://h4s2o8.github.io/demos/assets/ouyang-qing.jpg">
+  <title>PLAYROOM · H4S2O8 的游戏小站</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#games">跳到游戏列表</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="PLAYROOM 首页">
+        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M8 8h12c3 0 5 10 3 12-2 2-5-3-5-3h-8s-3 5-5 3C3 18 5 8 8 8Z"/><path d="M10 10v6m-3-3h6"/><circle cx="19" cy="12" r="1"/><circle cx="21" cy="15" r="1"/></svg></span>
+        <span>PLAYROOM<span class="brand-by">BY H4S2O8</span></span>
+      </a>
+      <nav aria-label="主导航">
+        <a class="nav-active" href="#games">游戏作品</a>
+        <a href="#before-play">游玩须知</a>
+        <a class="github-link" href="https://github.com/H4S2O8" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only">（新窗口）</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> 独立游戏实验室 <span class="eyebrow-divider">/</span> SMALL GAMES, BIG IDEAS</p>
+          <h1 id="hero-title">留点时间，<br>玩点<span class="title-accent">新东西<svg viewBox="0 0 290 16" aria-hidden="true"><path d="M4 10Q133 0 286 8M35 14Q152 5 251 12"/></svg></span><span class="title-period">。</span></h1>
+          <p class="hero-description">跳进实验室，试着改变物体的特性。<br>或是走进一个故事，看看选项之外会发生什么。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#games">探索全部游戏 <span aria-hidden="true">↘</span></a>
+            <button class="button button-random" id="random-game" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" transform="rotate(-12 12 12)"/><circle cx="8" cy="8" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="16" cy="16" r="1"/></svg>帮我挑一个</button>
+          </div>
+          <div class="hero-footnote"><span class="mini-windows" aria-hidden="true"><i></i><i></i><i></i></span>3 款游戏 <span>·</span> 浏览器即玩 <span>·</span> 免费体验</div>
+        </div>
+        <div class="featured-wrap">
+          <span class="feature-spark" aria-hidden="true">✳</span>
+          <a class="featured" href="https://h4s2o8.github.io/ouyang-qing/" aria-label="开始游玩：选项框外的你 · 欧阳晴线">
+            <div class="featured-topline"><span><i></i> FEATURED GAME</span><span>VISUAL NOVEL</span></div>
+            <div class="featured-art"><img src="assets/ouyang-qing.jpg" alt="选项框外的你：欧阳晴站在夜色中的街道上" width="1344" height="768" fetchpriority="high"><span class="feature-tag">短篇视觉小说</span></div>
+            <div class="featured-caption"><div><span class="small-label">跳出选项，走近她。</span><h2>选项框外的你<span>欧阳晴线</span></h2></div><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <span class="feature-sticker">JUST ONE MORE GAME.</span>
+        </div>
+      </section>
+
+      <section class="games-section" id="games" aria-labelledby="games-title">
+        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="games-title">挑一个世界，进去逛逛。<span class="count">03</span></h2></div><span class="section-aside">好奇心，是唯一的入场券。<span aria-hidden="true">↙</span></span></div>
+        <div class="game-grid">
+          <article class="game-card" id="platformer-2d" data-game>
+            <a class="game-cover" href="https://h4s2o8.github.io/platformer-game/" aria-label="开始游玩：2D 平台 · 助手2号"><img src="assets/platformer-2d.jpg" alt="2D 实验室实机画面，灯博士指导小机器人探索平台" width="800" height="450" loading="lazy"><span class="cover-number">01</span><span class="cover-play" aria-hidden="true">开始探索 ↗</span></a>
+            <div class="card-body"><div class="card-tags"><span class="tag tag-green">平台解谜</span><span class="card-format">2D · 像素风格</span></div><h3>2D 平台<span>助手2号</span></h3><p class="game-description">跟着灯博士走进像素实验室。吸取平台的弹性，把它传给另一个物体，为自己搭出前进的路。</p><p class="device-note"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M10 14v3m-4 0h8"/></svg>推荐电脑 · 键盘 / 鼠标</p><div class="card-bottom"><details><summary>操作说明 <span aria-hidden="true">＋</span></summary><p><kbd>A</kbd> <kbd>D</kbd> 或方向键移动；<kbd>空格</kbd> 跳跃；<kbd>Z</kbd> 或鼠标左键吸取 / 释放特性。跟随灯博士的提示完成测试。</p></details><a class="play-link" href="https://h4s2o8.github.io/platformer-game/" aria-label="开始游戏：2D 平台">开始游戏 <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="game-card" id="platformer-3d" data-game>
+            <a class="game-cover" href="https://h4s2o8.github.io/platformer-3d/" aria-label="开始游玩：3D 平台 · 助手2号"><img src="assets/platformer-3d.jpg" alt="3D 实验室实机画面，机器人站在立体平台与测试设施之间" width="1280" height="720" loading="lazy"><span class="cover-number">02</span><span class="cover-play" aria-hidden="true">进入实验室 ↗</span></a>
+            <div class="card-body"><div class="card-tags"><span class="tag tag-blue">平台解谜</span><span class="card-format">3D · 空间探索</span></div><h3>3D 平台<span>助手2号</span></h3><p class="game-description">这一次，实验室有了第三个维度。传递弹性与磁力，在三段相连的试验中找到自己的解法。</p><p class="device-note"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M10 14v3m-4 0h8"/></svg>需要电脑 · 键盘 + 鼠标</p><div class="card-bottom"><details><summary>操作说明 <span aria-hidden="true">＋</span></summary><p><kbd>WASD</kbd> 移动，鼠标环绕，<kbd>空格</kbd> 跳跃；左键 / <kbd>Z</kbd> 传递特性；<kbd>Enter</kbd> 继续对白，<kbd>Tab</kbd> 收起通讯器，<kbd>R</kbd> 返回检查点，<kbd>Esc</kbd> 暂停。</p></details><a class="play-link" href="https://h4s2o8.github.io/platformer-3d/" aria-label="开始游戏：3D 平台">开始游戏 <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="game-card" id="ouyang-qing" data-game>
+            <a class="game-cover" href="https://h4s2o8.github.io/ouyang-qing/" aria-label="开始游玩：选项框外的你"><img src="assets/ouyang-qing.jpg" alt="选项框外的你 · 欧阳晴线封面" width="1344" height="768" loading="lazy"><span class="cover-number">03</span><span class="cover-play" aria-hidden="true">走进故事 ↗</span></a>
+            <div class="card-body"><div class="card-tags"><span class="tag tag-pink">视觉小说</span><span class="card-format">全 CG · 八幕短篇</span></div><h3>选项框外的你<span>欧阳晴线</span></h3><p class="game-description">从一次对话开始，慢慢走近欧阳晴。在八幕故事里，留意她的每个表情，也听听自己的答案。</p><p class="device-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 11V9a7 7 0 0 1 14 0v2"/><rect x="2" y="10" width="4" height="7" rx="2"/><rect x="14" y="10" width="4" height="7" rx="2"/></svg>推荐电脑 · 戴上耳机</p><div class="card-bottom"><details><summary>游玩提示 <span aria-hidden="true">＋</span></summary><p>点击推进对白，跟随界面选择。推荐开启声音；首次加载需下载约 150 MB 素材，请稍等片刻。美术素材由 AI 生成。</p></details><a class="play-link" href="https://h4s2o8.github.io/ouyang-qing/" aria-label="开始游戏：选项框外的你">开始游戏 <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="before-play" id="before-play" aria-labelledby="before-play-title"><div class="info-icon" aria-hidden="true">i</div><div><h2 id="before-play-title">开玩之前，一点小提示</h2><p>使用电脑浏览器，体验会更完整。平台游戏需要键盘操作，首次进入会加载游戏资源；如果进度条停留了一会儿，给它一点时间。</p></div><span class="note-stamp" aria-hidden="true">READY?<br><strong>LET’S PLAY.</strong></span></aside>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="./">H4S2O8<span> / </span>PLAYROOM</a><p>一些脑洞，几个小世界。慢慢做，慢慢玩。</p><a href="https://github.com/H4S2O8" target="_blank" rel="noopener noreferrer">在 GitHub 找到我 ↗<span class="sr-only">（新窗口）</span></a></footer>
+  </div>
+
+  <dialog id="pick-dialog" aria-labelledby="pick-title" aria-describedby="pick-description"><button class="dialog-close" type="button" aria-label="关闭推荐">×</button><p class="eyebrow">YOUR NEXT ADVENTURE</p><h2 id="pick-title"></h2><p id="pick-description"></p><div class="dialog-actions"><a class="button button-primary" id="pick-link" href="#games">就玩这个 ↗</a><button class="button button-random" id="pick-again" type="button">换一个</button></div></dialog>
+</body>
+</html>
